@@ -1,14 +1,25 @@
 <!-- 嘿嘿嘿，后端来体验前端的滋味了 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HYJ的测试页面</title>
 </head>
+
+<style>
+/* 写入CSS代码 */
+a {color: red;
+    font-size: 50px;}
+
+h1 {color: blue;}
+
+tr {color: green;}
+</style>
+
 <body>
     <h1>超文本标记语言</h1>
-    <p>一个小小的段落（abab）</p>
+    <p>一个小小的段落(abab)</p>
     <h2>超文本标记语言</h2>
     <img src="不存在的图片.jpg" alt="不存在的图片.jpg" title="SB">
     <h3>超文本标记语言</h3>
@@ -16,5 +27,73 @@
     <h4>超文本标记语言</h4>
     <h5>超文本标记语言</h5>
     <h6>超文本标记语言</h6>
+    <table align="center" border="1" cellpadding="10" cellspacing="0" width="50%">
+        <!-- 属性要写到table标签里面 -->
+        <!-- align="center/left/right"控制居中 -->
+        <!-- border="1"控制边框 -->
+        <!-- cellpadding="10" cellspacing="0"控制单元格间距 -->
+         <!-- width="50%"控制宽度 -->
+        <thead>
+        <tr>
+            <th colspan="3" rowspan="1">HYJ的测试页面</th><!-- colspan="3"控制合并3个跨列单元格 rowspan="1"控制合并1个跨行单元格 -->
+        </tr> 
+        <tr>
+        <th>第1列</th> <th>第2列</th> <th>管理员</th>
+        </tr>
+         </thead>
+
+    <tbody>
+        <tr>
+            <td>123</td> <td>456</td> <td>HYJ</td>
+        </tr>
+        
+        <tr>
+            <td>666</td> <td>111</td> <td>147</td>
+        </tr>
+
+    </tbody>
+
+    </table>
+    <h2>无序列表</h2>
+    <ul>
+        <li><a href="https://baidu.com">百度</a></li>
+        <li><a href="https://HYJ-hello.github.io">BLOG</a></li>
+        <li><a href="https://tv.cctv.com">CCTV</a></li>
+    </ul>
+    <h2>有序列表</h2>
+    <ol>
+        <li><a href="https://baidu.com">百度</a></li>
+        <li><a href="https://HYJ-hello.github.io">BLOG</a></li>
+        <li><a href="https://tv.cctv.com">CCTV</a></li>
+    </ol>
+
+
+    <dl><!--自定义列表-->
+        <dt>一个自定义列表</dt>
+        <dd>一个列表元素</dd>
+        <dd>一个列表元素</dd>
+    </dl>
+    <form><!-- 表单标签 -->
+        用户名:<input type="text" name="username" maxlength="10"><br><!--maxlength设置最大输入位数-->
+        密码:<input type="password" name="password"><br>
+        
+        <label for="man">男</label> 
+        <input type="radio" name = "sex" id="man">
+        <label for="woman">女</label>
+        <input type="radio" name="sex" id="woman"><!--单选框 要有相同的name才能多选一--> <br>
+        
+        喜欢的学科: 语文<input type="checkbox" name="subject">数学<input type="checkbox" name="subject">英语<input type="checkbox" name="subject">
+        <input type="submit" value="提交表单"> <input type="reset" value="重置表单"> <input type="file">
+        <br>
+        <select>
+            <!-- 下拉标签 -->
+            <option>五中</option>
+            <option>十四中</option>
+        </select>
+        <br>
+        留言板 <!-- 文本域 --> <textarea>
+        请留言
+        </textarea>
+    </form>
 </body>
 </html>
